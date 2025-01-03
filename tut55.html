@@ -16,10 +16,11 @@
         console.log("This is tuturial 55");
 
         let arr = ["mahesh", "vicky", " Sumit", " suraj", " darshan"]
-        for (let i = 0; i < arr.length; i++) {                             // for loop
-            console.log("Hello friends, I am " + arr[i]);
+        for (let i = 0; i < arr.length; i++) { 
+            setInterval(() =>{
+                console.log("Hello friends, I am " + arr[i]);
+            },1000)                            // for loop
         }
-
         //alternate way for for loop
 
         arr.forEach(function f(element) {   // for each loop

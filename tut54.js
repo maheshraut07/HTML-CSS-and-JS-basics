@@ -10,7 +10,7 @@ console.log(name);                                  // answer of this question w
 
 let deletePost = confirm(" Do you really want to delete this post?")  // it ask about the confirmation  message 
 // console.log(deletepost) if we press yes then it will return true otherwise else
-if(deletepost){
+if(deletePost){
     //code to delete the post
     console.log("your post has been deleted succesfully!!!");
 }
