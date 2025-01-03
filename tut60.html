@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Arrow Fucntions </title>
+</head>
+
+<body>
+    <div class="container">
+        This is arrow function tutorial
+    </div>
+    <script>
+        function greet() {      // normal function
+            console.log('Good Morning');
+
+        }
+
+        let greet = () => {          // Arrow function
+            console.log('Good Morning');
+        }
+
+        greet();
+
+        SetTimeout(() => {
+            console.log(" we are inside setTimeout")
+        }, 3000);
+
+        let sum2 = (a, b) => a + b;
+        let sum = a => a / 2;
+
+        let obj1 = {
+            greeting:"Good Morning",
+            names: ["Harry", " Mahi", " vivek", "sumit"],
+            speak() {
+                this.names.forEach((student)=>{         // if we use function keyword instead of arrow function it will throw errorr because of this keyword , 
+                    console.log(this.greeting + "kukkdoo koo " + student)
+        });
+        }
+    }
+
+
+    </script>
+
+</body>
+
+</html>

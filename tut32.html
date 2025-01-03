@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors </title>
+    <style>
+        .container {
+           display: block;
+           width: 233px;
+           margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+        input[type="text"]{    /*pseudo selectors*/
+             padding: auto;
+             border: 2px solid red;
+
+        }
+        a[target]{             /*will only apply for anchor tag whose target is set*/
+            margin: 5px;
+            font-size: 34px;
+        }
+
+        li:nth-child(3){      /*this will apply css for 3rd child*/
+            color: cyan;
+        }
+
+        li:nth-child(2n+0){   /*this will apply css for every 2nd child*/
+            margin: 5px;
+            color:blue;
+        }  
+
+        li:nth-child(odd){      /*for every odd elements */
+            margin: auto;
+            color: maroon;
+        }  
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">go to google </a></h1>
+        <form action="" class="form-conntrol">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" placeholder="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item 1</li>
+            <li class="item" id="item-2">item 2</li>
+            <li class="item" id="item-3">Item 3</li>
+            <li class="item" id="item-4">Item 4</li>
+            <li class="item" id="item-5">Item 5</li>
+        </ul>
+    </div>
+</body>
+
+</html>

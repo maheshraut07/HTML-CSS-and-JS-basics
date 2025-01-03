@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and tables</title>
+    <style>
+        .mytable{
+           border: 2px solid red;
+        }
+
+        #item{
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- LISTS -->
+    <ul type="diamond">
+
+        <li>This is first item in ordered list</li>
+        <li>This is second item in ordered list</li>
+        <li>This is third item in ordered list</li>
+    </ul>
+
+    <ol type="a">
+        <li>this is first item of my ordered list</li>
+        <li>this is second item of my ordered list</li>
+        <li>this is third item of my ordered list</li>
+    </ol>
+
+    <!-- TABLES -->
+    <h3>HTML Table</h3>
+    <table  class="mytable">
+        <thead>
+            <tr id="item 2" class="mytable">
+                <th>Name</th>
+                <th>Employee Id</th>
+                <th>Employee Role</th>
+            </tr>
+
+        </thead>
+        <tbody id="item" class="mytable">
+            <tr >
+                <td>Mahesh</td>
+                <td>6531</td>
+                <td>Tester</td>
+            </tr>
+            <tr>
+                <td>Sumit</td>
+                <td>8520</td>
+                <td>interviewee</td>
+            </tr>
+            <tr>
+                <td>Vivek</td>
+                <td>9541</td>
+                <td>interviewer</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
+
+<!-- NOTES
+**tags used in lists
+1.ul-unordered list(used for unordered list intiaize by bullet (square, ring,disc)) 
+      this tag has vaious attributes
+       a.type (used for mentioning which type of bullet is used)
+    
+2.ol-ordered list(used for ordered list initialize by other than bullet numbering)
+
+3.li_list (used for writinhg actual line)
+
+** tags used in tables
+1.table- table tag(used for creating table)
+    it has various tags
+     a.thead- table head tag(used for writing heading of the tabel)
+         a1.tr- table row tag (used for writing first row of head of dsf the table )
+         a2.th- (used for writing each horizontal member of the tabel) 
+
+     b.tbody- table body tah(used for writing body of the tag)
+        b1.tr - (used for writing row of the body of the table)
+        b2. td  (used for writing each horizontal member in the data of the table)-->

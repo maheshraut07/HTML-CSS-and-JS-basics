@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        
+    }
+
+    .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        background-color: burlywood;
+       
+        box-shadow: 5px 5px 5px 5px black;/*box shadow = offset x, offset y ,bloor radius, colour radius*/
+                                              /* rgba (a means darkness of a colour*/
+                                              /* box shadow: inset (means shadow will rise in the box*/
+
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque, a eos cupiditate harum, fugiat iure
+                quibusdam repudiandae, perferendis magnam adipisci. Obcaecati dolores blanditiis mollitia repudiandae
+                tempora, numquam, porro recusandae molestias adipisci, eum quo.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam deserunt possimus modi perspiciatis
+                natus sequi veniam earum architecto exercitationem, quaerat quas, rem pariatur corporis tenetur autem?
+                Blanditiis tempore sed ad architecto harum iusto commodi?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quod minima tempore, beatae
+                suscipit provident nemo nihil dolorem deleniti molestiae expedita cumque quisquam culpa dignissimos cum
+                ducimus laudantium mollitia similique ut! Aperiam, cupiditate aspernatur.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

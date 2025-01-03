@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        /* h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        div li p {                   it will implemented for only the paragraph inside li of div
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }
+        */
+
+
+        div>p {
+            /*if p is a direct child of div*/
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }
+
+        div+p {
+            /*if the previous element of p is div*/
+            color: white;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>this is another paragraph inside li</p>
+                </li>
+                <li>this will not get afftected</li>
+            </ul>
+            <p>this is a paragraph </p>
+        </div>
+        <p>this is another paragraph outside div</p>
+    </div>
+</body>
+
+</html>

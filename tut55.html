@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops </title>
+</head>
+
+<body>
+    <div class="container">
+        This is about loops
+    </div>
+    <script>
+        console.log("This is tuturial 55");
+
+        let arr = ["mahesh", "vicky", " Sumit", " suraj", " darshan"]
+        for (let i = 0; i < arr.length; i++) {                             // for loop
+            console.log("Hello friends, I am " + arr[i]);
+        }
+
+        //alternate way for for loop
+
+        arr.forEach(function f(element) {   // for each loop
+            console.log("Hello friends , I am " + element);
+        })
+
+
+        //another alternate way of for using for loop 
+
+        for (element of arr) {    // for of loop
+            console.log("Hello friends , I am " + element);
+        }
+
+
+        // for in loop for iteration of object elements
+
+        let employee = {
+            name: " mahesh",
+            salary: 5000,
+            company: " adobe"
+
+        }
+
+        for (key in employee) {
+            console.log(` the ${key} of employee is ${employee[key]}`);
+            // output will be
+            // the name of employee is mahesh
+        }
+
+        //while and do while loops in javascript are same as c++
+    </script>
+
+</body>
+
+</html>

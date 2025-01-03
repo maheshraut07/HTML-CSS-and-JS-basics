@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Functions Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Welcome to jQuery Functions Example</h1>
+
+<p id="demo">Click the buttons to see jQuery functions in action.</p>
+
+<button id="hideButton">Hide Paragraph</button>
+<button id="showButton">Show Paragraph</button>
+<button id="toggleButton">Toggle Paragraph</button>
+<button id="addClassButton">Add Class</button>
+<button id="removeClassButton">Remove Class</button>
+<button id="toggleClassButton">Toggle Class</button>
+<button id="textButton">Change Text</button>
+<button id="htmlButton">Change HTML</button>
+<button id="attrButton">Change Attribute</button>
+<button id="appendButton">Append Text</button>
+<button id="prependButton">Prepend Text</button>
+<button id="beforeButton">Insert Before</button>
+<button id="afterButton">Insert After</button>
+<button id="animateButton">Animate</button>
+
+<script>
+  $(document).ready(function() {
+    $("#hideButton").click(function() {
+      $("#demo").hide();
+    });
+
+    $("#showButton").click(function() {
+      $("#demo").show();
+    });
+
+    $("#toggleButton").click(function() {
+      $("#demo").toggle();
+    });
+
+    $("#addClassButton").click(function() {
+      $("#demo").addClass("highlight");
+    });
+
+    $("#removeClassButton").click(function() {
+      $("#demo").removeClass("highlight");
+    });
+
+    $("#toggleClassButton").click(function() {
+      $("#demo").toggleClass("highlight");
+    });
+
+    $("#textButton").click(function() {
+      $("#demo").text("New Text");
+    });
+
+    $("#htmlButton").click(function() {
+      $("#demo").html("<strong>New HTML</strong>");
+    });
+
+    $("#attrButton").click(function() {
+      $("#demo").attr("title", "New Title");
+    });
+
+    $("#appendButton").click(function() {
+      $("#demo").append(" Appended Text");
+    });
+
+    $("#prependButton").click(function() {
+      $("#demo").prepend("Prepended Text ");
+    });
+
+    $("#beforeButton").click(function() {
+      $("#demo").before("<p>Before Paragraph</p>");
+    });
+
+    $("#afterButton").click(function() {
+      $("#demo").after("<p>After Paragraph</p>");
+    });
+
+    $("#animateButton").click(function() {
+      $("#demo").animate({ fontSize: "24px" }, "slow");
+    });
+  });
+</script>
+
+</body>
+</html>

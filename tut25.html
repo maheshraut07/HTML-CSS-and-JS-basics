@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            width: 150px ;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+            background-color: yellow;
+        }
+
+       
+        #box3{
+            position: absolute;
+
+            left:35px;
+            top: 50px;
+        }
+        #box3{
+            position: absolute;
+            left: 45px;
+            top: 50px;
+        }
+         
+        .container{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</body>
+</html>
+
+
+<!-- there are many types of positions 
+1.static (default)
+2.absolute    (relative to its position of first parents)
+3.relative   (relative to its normal and will leave a gap at its normal position)
+4.fixed)      ( directly box will move to mentioned position , positions relative to its browser window)
+5.sticky       (stick to the page even if user is scrolling)-->

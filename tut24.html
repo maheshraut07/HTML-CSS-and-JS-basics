@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            background-color: aqua;
+        }
+       
+       
+        
+        header{
+            padding: 5px 20px;
+            margin:auto;
+            border: 2px solid blue;
+            width: 50%;
+        }
+        img{
+            width:34px;
+            display: block;
+            margin:auto; 
+        }
+        h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin:0px; 
+        }
+        .box{
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: gray;
+            margin: 5px;
+            padding: 23px;
+            display:inline-block;
+            width: 30%;
+            box-sizing: border-box;
+        }
+        .box:hover{
+            color: yellow;
+            background-color: green;
+        }
+
+        .container{
+            display: inline-block;
+            width: 1200px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://www.google.com/search?q=cat+images&rlz=1C1VDKB_enIN1035IN1035&oq=cat+image&aqs=chrome.0.0i433i512j69i57j0i512l5j0i433i512j0i512l2.3155j0j7&sourceid=chrome&ie=UTF-8#imgrc=fmv67k1hlOlcDM" alt="">
+        <h3>Welcome to mahesh's blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, deleniti nobis alias nisi excepturi natus ducimus. Illum, atque! Ut eligendi cum cupiditate rerum quidem itaque quibusdam similique repellat a omnis, excepturi repellendus explicabo blanditiis ea.</p>
+            
+        </div>
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, deleniti nobis alias nisi excepturi natus ducimus. Illum, atque! Ut eligendi cum cupiditate rerum quidem itaque quibusdam similique repellat a omnis, excepturi repellendus explicabo blanditiis ea.</p>
+
+        </div>
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, deleniti nobis alias nisi excepturi natus ducimus. Illum, atque! Ut eligendi cum cupiditate rerum quidem itaque quibusdam similique repellat a omnis, excepturi repellendus explicabo blanditiis ea.</p>
+
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- the selector * can select all elements -->

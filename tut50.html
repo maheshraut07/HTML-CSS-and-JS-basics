@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript string functions</title>
+</head>
+<body>
+    <script>
+        var str = "this is a string";
+        console.log(str);
+
+        // first occurace of a string
+        var position = str.indexOf('is');  // it gives first occurance of substring
+        console.log(position)
+        
+        // last occurance of a string
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        // substring from a string
+        var substr = str.slice(1,7) // ca take negative valuse
+        console.log(substr);
+
+        var substr1 = str.substring(1,7) //can not take negative values 
+        console.log(substr1);
+
+        var substr2 = str.substr(1,3); // takes 3 characters from 1st index
+        console.log(substr2);
+
+        // replace string by  another string
+        var replace = str.replace('string','mahesh');
+        console.log(replace);
+
+        // function to convert string inot lowercase and uppercase
+        console.log(str.toUpperCase);
+        console.log(str.toLowerCase);
+
+        // concatenate two strings
+        var newstring = str.concat('New String');
+        console.log(newstring);
+
+        //remove initial and final white spaces
+        var mystr = "     THIS IS MAHESH   ";
+        console.log(mystr.trim());
+        
+
+        // to find index of a character
+        var char = str.charAt(2);
+        console.log(char);
+
+        //slice opeeration in string
+        console.log(str[3]);
+
+
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutrial </title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /*initializee the container as flexbox*/
+
+            /*Flex properties for container*/
+            flex-direction: row;
+            /* defalut is row mode*/
+            /*
+            flex-direction: column;
+            flex_direction: row-reverse;
+            flex-direction: colomn-reverse
+            */
+
+            /*flex-wrap: wrap;  /*
+            /*flex-wrap: wrap-reverse;
+            by
+            default mode is no wrap*/
+            flex-flow: row-reverse wrap;
+            /* combination of flex wrap and flex direction*/
+        
+
+        }
+
+        .item {
+            background-color: tomato;
+            border: 2px solid;
+            margin: 10px;
+            padding: 4px;
+            width: 200px;
+            height: 200px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <h1>This is flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">dirst box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        <div class="item" id="item-4">fourth box</div>
+        <div class="item" id="item-5">fifth box</div>
+        <div class="item" id="item-6">sixth box</div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- 
+***flex-diplay property
+it describe the dipslaying manner of the elements in the flexbox
+flex-direction: row;   default value is row
+flex-direction: column;
+flex_direction: row-reverse;
+flex-direction: colomn-reverse
+
+***flex wrap
+if we minimize the width or height of the elements then it will wrap
+flex-wrap: wrap;
+flex-wrap: wrap-reverse;
+by default mode is no wrap
+
+***flex-flow
+it is the combination of flex display and flex wrap
+flex-flow: row-reverse wrap;
+
+****justify property
+1)justify-content: center (all elements comes in center)
+2)justify-content:space-between (  space between two elements is maintained equal)
+3)justify-content:space-evenly(same space between elements is maintained including starting and end  )
+4)justfify-content: space-around(same margin is maintained between elements)
+
+*****align items
+1)align-items:center(align all items in center vertically)
+2)align-items:flex end(align all items in end vertically) 
+3)align-items:flex start(align all items in start vertically,it is default)
+3)align-items:stretch(all elements are stretched)
+
+****order property
+the elements which has higher order will go at last
+
+***flex-grow 
+which element has higher  flex grow valuse that element space will high 
+negative numbers in flex grow value are invalid
+
+***flex shrink 
+it is property opposite to flex grow
+
+**flex-basis
+when flex direction is set to row flex-basis will control width
+when flex diection is set to column flex-basis will control height
+
+***align-self-
+align-self- flex-start (element will remained at start)
+align-self-flex-end(element will at end )
+align-self-center (element will at center)
+
+flex: flex grow,flex shrink,flex basis
+flex: 20  32  200px;--->

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            display: grid;
+            border: 2px solid black;
+            background-color: rgb(21, 18, 18);
+            height: 100%;
+            width: 100%;
+            padding: 4rem;
+            display: grid;
+            row-gap: 1 rem;
+            column-gap: 1rem;
+            grid-template-rows: repeat(5,1fr);
+            grid-template-columns: repeat(1,1fr);
+          
+
+
+        }
+        .item{
+            border: 2px solid black;
+            color: rgba(232, 231, 229, 0.747);
+            background-color: rgb(239, 179, 29);
+            border: 5px solid black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        @media (min-width : 768px){     /* it will apply only for width greater than or equal to 768*/
+            .container{
+                grid-template-rows: repeat(3,1fr);
+                grid-template-columns: repeat(3,1fr);
+            }
+            .header1{
+                grid-row-end: 2;
+                grid-column-end: 2;
+            }
+            .header2{
+                grid-row-end: 2;
+                grid-column-start: 3;
+                
+            }
+            .middle{
+               grid-row-start: 2;
+               grid-row-end: 2;
+               grid-column-start: 2;
+               grid-column-end: 2;  /*grid column start did not mentioned means it will start from 0*/
+           }
+            .footer1{
+                grid-row-start: 3;
+                grid-column-start: 1;
+                grid-column-end: 1;
+             }
+        
+            
+            .footer2{
+                grid-row-start: 3;
+                grid-column-start: 3;
+                
+            } 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header1">header1</div>
+        <div class="item header2">header2</div>
+        <div class="item middle">middle</div>
+        <div class="item footer1">footer1</div>
+        <div class="item footer2">footer2</div>
+      
+    </div>
+</body>
+</html>

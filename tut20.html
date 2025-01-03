@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: rgb(183, 215, 24);
+            border: 3px solid rgb(17, 173, 82);
+            padding-top: 9px;
+            padding-bottom: 10px;
+            padding: 20px 50px 65px 48px; /*padding = top right bottom left
+                                            padding : y(top,bottom) x(left right  for same padding in x and y direction*/
+            margin: 8px;     /*margin: y x 
+                               margin: 45px 63 px*/
+
+        }
+
+        body{
+            background-color:rgb(177, 232, 104);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, labore! Neque exercitationem
+            architecto, facere odio error sint odit soluta id inventore, optio quod iste reprehenderit consequatur!
+            Unde, tempore similique molestias amet ab neque alias blanditiis! Blanditiis ullam amet excepturi culpa!</p>
+
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, labore! Neque exercitationem
+            architecto, facere odio error sint odit soluta id inventore, optio quod iste reprehenderit consequatur!
+            Unde, tempore similique molestias amet ab neque alias blanditiis! Blanditiis ullam amet excepturi culpa!</p>
+
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, labore! Neque exercitationem
+            architecto, facere odio error sint odit soluta id inventore, optio quod iste reprehenderit consequatur!
+            Unde, tempore similique molestias amet ab neque alias blanditiis! Blanditiis ullam amet excepturi culpa!</p>
+
+    </div>
+</body>
+
+</html>
