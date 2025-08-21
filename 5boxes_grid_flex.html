@@ -6,7 +6,8 @@
     <title>Document</title>
     <style>
         *{
-            margin: 0;
+            margin: 0;                     /*Removes default margin and padding from all elements.
+                                            Sets box-sizing: border-box so padding and borders are included in element width/height, making layout easier.*/
             padding: 0;
             box-sizing: border-box;
             
@@ -48,7 +49,7 @@
                 grid-template-rows: repeat(3,1fr);
                 grid-template-columns: repeat(3,1fr);
             }
-            .header1{
+            .header1{                       /*Positions the header1 item so its bottom edge aligns with row 2 and its right edge aligns with column 2.*/
                 grid-row-end: 2;
                 grid-column-end: 2;
             }
@@ -58,15 +59,15 @@
                 
             }
             .middle{
-               grid-row-start: 2;
-               grid-row-end: 2;
-               grid-column-start: 2;
-               grid-column-end: 2;  /*grid column start did not mentioned means it will start from 0*/
+               /* grid-row-start: 2; */
+               grid-row-end: 3;
+               /* grid-column-start: 2; */
+               grid-column-end: 3;  /*grid column start did not mentioned means it will start from 0*/
            }
             .footer1{
                 grid-row-start: 3;
                 grid-column-start: 1;
-                grid-column-end: 1;
+                /* grid-column-end: 1; */
              }
         
             
